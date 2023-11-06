@@ -1,18 +1,27 @@
-
+import java.util.Scanner;
 public class IntegerFour {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-int a=100,b=150,c=90,d=45;
-
-if(a>b && a>c && a>d);
-{
-	System.out.println("a is greater");
+    public static void main(String[] args) {
+        
+        Scanner obj = new Scanner(System.in);
+        int a = obj.nextInt();
+        int b = obj.nextInt();
+        int c = obj.nextInt();
+        int d = obj.nextInt();
+        
+        int sum1= a+b;
+        int sum2 = c+d;
+        
+        if(sum1>sum2)
+        {
+            System.out.println("sum of a & b is greater than sum of c & d");
+        }
+        else if(sum1 == sum2){
+            System.out.println("sum of a & b is equal to sum of c & d");
+        }
+        else{
+            System.out.println("sum of c & d is equal to sum of a & b");
+		}
+	}
 }
-else if(b>a && b>c && b>d);
-{
-System.out.println("b is greater");
-}
 
-		
-}
+
